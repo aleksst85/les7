@@ -1,6 +1,6 @@
-
 import json
-from config import JSON_PATCH
+
+
 
 def game_space(questions):
     """Создаем и модифицируем  игровое пространство"""
@@ -11,7 +11,7 @@ def game_space(questions):
             if not asked:
                 print(str(price).ljust(5), end="")
             else:
-                print("   ".ljust(5), end = "")
+                print("   ".ljust(5), end="")
         print()
 
 
@@ -25,7 +25,6 @@ def game_space(questions):
 #            else:
 #                price_list.append("...")
 #        print(f"{quest}{(15-len(quest))*' '}{'   '.join(price_list)}")
-        
 
 
 def parse_input(quest_num):
@@ -38,6 +37,3 @@ def load_json(patch):
         data_json = file.read()
     questions = json.loads(data_json)
     return questions
-
-
-
